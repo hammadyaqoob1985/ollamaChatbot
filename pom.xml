@@ -12,7 +12,7 @@
 	<artifactId>starter</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>starter</name>
-	<description>Demo project for Spring Boot</description>
+	<description>Demo project for creating basic ollama chatbot</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -29,7 +29,27 @@
 	<properties>
 		<java.version>23</java.version>
 	</properties>
+	<repositories>
+		<repository>
+			<id>spring-milestones</id>
+			<name>Spring milestones</name>
+			<url>https://repo.spring.io/milestone</url>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
+		<dependency>
+			<groupId>org.springframework.ai</groupId>
+			<artifactId>spring-ai-ollama-spring-boot-starter</artifactId>
+			<version>1.0.0-M4</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
